@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px 0;
+  background: #001a5e;
+  font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#newGame {
+  background-color: #ffffff;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5rem;
+  color: #001a5e;
+  margin-left: 47%;
+  border-radius: 15%;
+  border-color: #001a5e;
+}
+
+#newGame:hover {
+  color: #ffffff;
+  background-color: #5a65ff;
+  border-color: #5a65ff;
+}
+
+.grid {
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  transition: all 0.4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+  height: 200px;
+  width: 200px;
+}
+
+.front {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  backface-visibility: hidden;
+  z-index: 2;
+  background-image: url('./cards/druidTree.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.back {
+  position: absolute;
+  backface-visibility: hidden;
+  height: 200px;
+  width: 200px;
+  transform: rotateY(180deg);
+  background-color: #001a5e;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.match {
+  transform: rotateY(180deg);
+}
