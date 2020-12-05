@@ -1,2 +1,2 @@
-# Simple_Memory_Game
+# Simple Memory Game
 Memory game using magic potions.
